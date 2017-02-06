@@ -35,3 +35,18 @@ var e = 3 + 2 * 4; // e contient la valeur 11
 console.log(e);
 e = (3 + 2) * 4; //contient la valeur  20
 console.log(e);
+
+// Conversion de types
+// Implicite
+var f = 100;
+console.log("la variable f contient la valeur "+ 100);
+
+// NaN (Not a Number)
+var g ="cinq"*2;
+console.log(g); // affiche NaN
+
+//Explicite
+var h ="5";
+console.log(h + 1); // Concaténation : affiche la chaîne "51"
+h = Number("5");
+console.log(h + 1); // Addition : affiche le nombre 6
