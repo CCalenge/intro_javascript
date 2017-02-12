@@ -14,8 +14,8 @@
 
 /*SYNTAXE
 
-for (initialisation; condition; étape) {
-    // instruction executées tant que la condition est vérifiée
+while (condition) {
+    // instruction executée tant que la condition est vérifiée
 }
 
 
@@ -37,9 +37,7 @@ console.log("Fin du programme");
 SYNTAXE
 
 for (initialisation; condition; étape) {
-
-    // instruction executées tant que la condition est vérifiée
-
+    // instruction executée tant que la condition est vérifiée
 }
 
 L'initialisation se produit une seule fois, au début de l'exécution.
@@ -49,17 +47,6 @@ La condition est évaluée avant chaque tour de boucle. Si elle est vraie, un no
 L'étape  est réalisée après chaque tour de boucle.
 
 
-*/
-
-// Autre syntaxe :
-console.log("Début du programme");
-
-for(var compteur = 1; compteur <= 5; compteur++) {
-  console.log(compteur);
-}
-console.log("Fin du programme");
-
-/*
 ERREURS FREQUENTES
 
 la boucle infinie avec la boucle while

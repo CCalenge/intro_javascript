@@ -46,7 +46,7 @@ if (nombre > 0){
   console.log(nombre + " est positif");
 } else { // nombre <= 0
   if (nombre < 0) {
-    console.log(nombre + " est positif");
+    console.log(nombre + " est négatif");
   } else { // nombre === O
     console.log(nombre + " est nul");
   }
@@ -137,7 +137,7 @@ default:
 }
 
 // SWITCH
-/* L'instructionswitch déclenche l'exécution d'un bloc d'instructions parmi plusieurs possibles. Seul le bloc correspondant à la valeur de l'expression testée sera pris en compte. Sa syntaxe est la suivante.
+/* L'instruction switch déclenche l'exécution d'un bloc d'instructions parmi plusieurs possibles. Seul le bloc correspondant à la valeur de l'expression testée sera pris en compte. Sa syntaxe est la suivante.
 
 switch (expression) {
 case valeur1:
