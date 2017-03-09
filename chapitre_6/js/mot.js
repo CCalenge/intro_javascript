@@ -18,20 +18,23 @@ console.log("Il s'écrit en majuscules " + saisie.toUpperCase());
 
 
 function compterNbVoyelles() {
+
+  var mot = saisie.toLowerCase();
+
   var nbVoyelle = 0;
   var nbConsomne = 0;
 
-  for (var i = 0; i < saisie.length; i++){
+  for (var i = 0; i < mot.length; i++){
 
-    var lettre = saisie[i];
+    var lettre = mot[i];
     if ((lettre === "a") || (lettre === "e") || (lettre === "i") || (lettre === "o") || (lettre === "u") || (lettre === "y")) {
       nbVoyelle++;
     } else {
       nbConsomne++;
     }
   }
-  var message = saisie + " contient " + nbVoyelle + " voyelle(s) et " + nbConsomne + " consomne(s)";
-  
+  var message = mot + " contient " + nbVoyelle + " voyelle(s) et " + nbConsomne + " consomne(s)";
+
   return message;
 }
 
