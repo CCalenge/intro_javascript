@@ -14,15 +14,15 @@ console.log("Il s'écrit en minuscules " + saisie.toLowerCase());
 console.log("Il s'écrit en majuscules " + saisie.toUpperCase());
 
 
-// Compter le nombre de voyelles
+// COMPTER LE NOMBRES DE VOYELLES
+/*Complétez le programme mot.js en y ajoutant une fonction compterNbVoyelles() qui prend un mot en paramètre et renvoie son nombre de voyelles. Utilisez cette fonction pour afficher le nombre de voyelles et de consonnes du mot.*/
 
+var mot = saisie.toLowerCase();
 
-function compterNbVoyelles() {
-
-  var mot = saisie.toLowerCase();
+function compterNbVoyelles(mot) {
 
   var nbVoyelle = 0;
-  var nbConsomne = 0;
+  var nbConsonne = 0;
 
   for (var i = 0; i < mot.length; i++){
 
@@ -30,13 +30,20 @@ function compterNbVoyelles() {
     if ((lettre === "a") || (lettre === "e") || (lettre === "i") || (lettre === "o") || (lettre === "u") || (lettre === "y")) {
       nbVoyelle++;
     } else {
-      nbConsomne++;
+      nbConsonne++;
     }
   }
-  var message = mot + " contient " + nbVoyelle + " voyelle(s) et " + nbConsomne + " consomne(s)";
+  var message = mot + " contient " + nbVoyelle + " voyelle(s) et " + nbConsonne + " consonne(s)";
 
   return message;
 }
 
-var resultat = compterNbVoyelles();
+var resultat = compterNbVoyelles(mot);
 console.log(resultat);
+
+
+// INVERSION DU MOT
+
+//Complétez le programme mot.js avec une fonction inverser() qui prend en paramètre un mot et renvoie ce mot écrit à l'envers. Utilisez cette fonction pour afficher le mot inversé.
+
+//function inverser()
